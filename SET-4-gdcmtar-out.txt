@@ -1,0 +1,328 @@
+(0002, 0000) File Meta Information Group Length  UL: 240
+(0002, 0001) File Meta Information Version       OB: '\x00\x01'
+(0002, 0002) Media Storage SOP Class UID         UI: Enhanced MR Image Storage
+(0002, 0003) Media Storage SOP Instance UID      UI: 1.2.826.0.1.3680043.2.1143.990969196226074647507042500404900876
+(0002, 0010) Transfer Syntax UID                 UI: Explicit VR Little Endian
+(0002, 0012) Implementation Class UID            UI: 1.2.826.0.1.3680043.2.1143.107.104.103.115.2.4.0
+(0002, 0013) Implementation Version Name         SH: 'GDCM 2.4.0'
+(0002, 0016) Source Application Entity Title     AE: 'gdcmtar'
+............................................
+(0008, 0016) SOP Class UID                       UI: Enhanced MR Image Storage
+(0008, 0018) SOP Instance UID                    UI: 1.2.826.0.1.3680043.2.1143.990969196226074647507042500404900876
+(0008, 0020) Study Date                          DA: '20131107'
+(0008, 0030) Study Time                          TM: '185117.910547'
+(0008, 0050) Accession Number                    SH: ''
+(0008, 0060) Modality                            CS: 'MR'
+(0008, 0090) Referring Physician's Name          PN: ''
+(0010, 0010) Patient's Name                      PN: ''
+(0010, 0020) Patient ID                          LO: ''
+(0010, 0030) Patient's Birth Date                DA: ''
+(0010, 0040) Patient's Sex                       CS: ''
+(0020, 000d) Study Instance UID                  UI: 1.2.826.0.1.3680043.2.1143.470730492647660969258585405045651616
+(0020, 000e) Series Instance UID                 UI: 1.2.826.0.1.3680043.2.1143.1054544801534396533461485344487098952
+(0020, 0010) Study ID                            SH: ''
+(0020, 0011) Series Number                       IS: ''
+(0020, 0013) Instance Number                     IS: ''
+(0028, 0002) Samples per Pixel                   US: 1
+(0028, 0004) Photometric Interpretation          CS: 'MONOCHROME2'
+(0028, 0008) Number of Frames                    IS: '70'
+(0028, 0010) Rows                                US: 256
+(0028, 0011) Columns                             US: 256
+(0028, 0100) Bits Allocated                      US: 16
+(0028, 0101) Bits Stored                         US: 16
+(0028, 0102) High Bit                            US: 15
+(0028, 0103) Pixel Representation                US: 1
+(5200, 9229)  Shared Functional Groups Sequence   1 item(s) ---- 
+   (0020, 9116)  Plane Orientation Sequence   1 item(s) ---- 
+      (0020, 0037) Image Orientation (Patient)         DS: ['1', '-0', '0', '-0', '1', '0']
+      ---------
+   (0028, 9110)  Pixel Measures Sequence   1 item(s) ---- 
+      (0028, 0030) Pixel Spacing                       DS: ['1.6406', '1.6406']
+      ---------
+   (0028, 9145)  Pixel Value Transformation Sequence   1 item(s) ---- 
+      (0028, 1052) Rescale Intercept                   DS: '0'
+      (0028, 1053) Rescale Slope                       DS: '1'
+      ---------
+   ---------
+(5200, 9230)  Per-frame Functional Groups Sequence   70 item(s) ---- 
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '-43.6522']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '-37.6522']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '-31.6522']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '-25.6522']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '-19.6522']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '-13.6522']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '-7.6522']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '-1.6522']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '4.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '10.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '16.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '22.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '28.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '34.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '40.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '46.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '52.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '58.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '64.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '70.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '76.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '82.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '88.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '94.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '100.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '106.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '112.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '118.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '124.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '130.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '136.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '142.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '148.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '154.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '160.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '166.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '172.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '178.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '184.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '190.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '196.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '202.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '208.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '214.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '220.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '226.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '232.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '238.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '244.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '250.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '256.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '262.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '268.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '274.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '280.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '286.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '292.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '298.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '304.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '310.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '316.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '322.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '328.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '334.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '340.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '346.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '352.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '358.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '364.3478']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-211.454', '-215.034', '370.3478']
+      ---------
+   ---------
+(7fe0, 0010) Pixel Data                          OW: Array of 9175040 bytes

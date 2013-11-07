@@ -1,0 +1,136 @@
+(0002, 0000) File Meta Information Group Length  UL: 240
+(0002, 0001) File Meta Information Version       OB: '\x00\x01'
+(0002, 0002) Media Storage SOP Class UID         UI: Enhanced MR Image Storage
+(0002, 0003) Media Storage SOP Instance UID      UI: 1.2.826.0.1.3680043.2.1143.7810967588614469177556501158765113055
+(0002, 0010) Transfer Syntax UID                 UI: Explicit VR Little Endian
+(0002, 0012) Implementation Class UID            UI: 1.2.826.0.1.3680043.2.1143.107.104.103.115.2.4.0
+(0002, 0013) Implementation Version Name         SH: 'GDCM 2.4.0'
+(0002, 0016) Source Application Entity Title     AE: 'gdcmtar'
+............................................
+(0008, 0016) SOP Class UID                       UI: Enhanced MR Image Storage
+(0008, 0018) SOP Instance UID                    UI: 1.2.826.0.1.3680043.2.1143.7810967588614469177556501158765113055
+(0008, 0020) Study Date                          DA: '20131107'
+(0008, 0030) Study Time                          TM: '184816.555286'
+(0008, 0050) Accession Number                    SH: ''
+(0008, 0060) Modality                            CS: 'MR'
+(0008, 0090) Referring Physician's Name          PN: ''
+(0010, 0010) Patient's Name                      PN: ''
+(0010, 0020) Patient ID                          LO: ''
+(0010, 0030) Patient's Birth Date                DA: ''
+(0010, 0040) Patient's Sex                       CS: ''
+(0020, 000d) Study Instance UID                  UI: 1.2.826.0.1.3680043.2.1143.9973372833508528224355226883497797106
+(0020, 000e) Series Instance UID                 UI: 1.2.826.0.1.3680043.2.1143.5265158103270707473932102182529406510
+(0020, 0010) Study ID                            SH: ''
+(0020, 0011) Series Number                       IS: ''
+(0020, 0013) Instance Number                     IS: ''
+(0028, 0002) Samples per Pixel                   US: 1
+(0028, 0004) Photometric Interpretation          CS: 'MONOCHROME2'
+(0028, 0008) Number of Frames                    IS: '22'
+(0028, 0010) Rows                                US: 512
+(0028, 0011) Columns                             US: 512
+(0028, 0100) Bits Allocated                      US: 16
+(0028, 0101) Bits Stored                         US: 12
+(0028, 0102) High Bit                            US: 11
+(0028, 0103) Pixel Representation                US: 0
+(5200, 9229)  Shared Functional Groups Sequence   1 item(s) ---- 
+   (0020, 9116)  Plane Orientation Sequence   1 item(s) ---- 
+      (0020, 0037) Image Orientation (Patient)         DS: ['0.99971222877502', '7.8810308973e-012', '0.02398800104856', '-0.0017278126906', '0.99740260839462', '0.07200747728347']
+      ---------
+   (0028, 9110)  Pixel Measures Sequence   1 item(s) ---- 
+      (0028, 0030) Pixel Spacing                       DS: ['0.46875', '0.46875']
+      ---------
+   (0028, 9145)  Pixel Value Transformation Sequence   1 item(s) ---- 
+      (0028, 1052) Rescale Intercept                   DS: '0'
+      (0028, 1053) Rescale Slope                       DS: '1'
+      ---------
+   ---------
+(5200, 9230)  Per-frame Functional Groups Sequence   22 item(s) ---- 
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-120.47038201056', '-114.78342866992', '-42.399422228336']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-120.613936179453', '-115.215597884177', '-36.4167287205907']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-120.757490348345', '-115.647767098434', '-30.4340352128454']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-120.901044517238', '-116.079936312691', '-24.4513417051001']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-121.044598686131', '-116.512105526948', '-18.4686481973548']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-121.188152855023', '-116.944274741205', '-12.4859546896095']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-121.331707023916', '-117.376443955462', '-6.50326118186416']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-121.475261192808', '-117.808613169719', '-0.520567674118858']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-121.618815361701', '-118.240782383976', '5.46212583362645']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-121.762369530594', '-118.672951598233', '11.4448193413718']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-121.905923699486', '-119.105120812489', '17.4275128491171']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-122.049477868379', '-119.537290026746', '23.4102063568624']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-122.193032037272', '-119.969459241003', '29.3928998646077']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-122.336586206164', '-120.40162845526', '35.375593372353']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-122.480140375057', '-120.833797669517', '41.3582868800983']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-122.62369454395', '-121.265966883774', '47.3409803878436']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-122.767248712842', '-121.698136098031', '53.3236738955889']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-122.910802881735', '-122.130305312288', '59.3063674033342']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-123.054357050627', '-122.562474526545', '65.2890609110795']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-123.19791121952', '-122.994643740802', '71.2717544188248']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-123.341465388413', '-123.426812955059', '77.2544479265701']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-123.485019557305', '-123.858982169316', '83.2371414343154']
+      ---------
+   ---------
+(7fe0, 0010) Pixel Data                          OW: Array of 11534336 bytes

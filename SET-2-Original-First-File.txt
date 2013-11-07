@@ -1,0 +1,143 @@
+(0002, 0000) File Meta Information Group Length  UL: 192
+(0002, 0001) File Meta Information Version       OB: '\x00\x01'
+(0002, 0002) Media Storage SOP Class UID         UI: CT Image Storage
+(0002, 0003) Media Storage SOP Instance UID      UI: 1.3.12.2.1107.5.1.4.11042.30000013080917061609300002359
+(0002, 0010) Transfer Syntax UID                 UI: Explicit VR Little Endian
+(0002, 0012) Implementation Class UID            UI: 1.3.12.2.1107.5.1.4
+(0002, 0013) Implementation Version Name         SH: 'SIEMENS_S7VA27A'
+............................................
+(0008, 0005) Specific Character Set              CS: 'ISO_IR 100'
+(0008, 0008) Image Type                          CS: ['ORIGINAL', 'PRIMARY', 'AXIAL', 'CT_SOM5 SPI']
+(0008, 0016) SOP Class UID                       UI: CT Image Storage
+(0008, 0018) SOP Instance UID                    UI: 1.3.12.2.1107.5.1.4.11042.30000013080917061609300002359
+(0008, 0020) Study Date                          DA: '20130809'
+(0008, 0021) Series Date                         DA: '20130809'
+(0008, 0022) Acquisition Date                    DA: '20130809'
+(0008, 0023) Content Date                        DA: '20130809'
+(0008, 0030) Study Time                          TM: '153611.031000'
+(0008, 0031) Series Time                         TM: '153926.968000'
+(0008, 0032) Acquisition Time                    TM: '153910.197000'
+(0008, 0033) Content Time                        TM: '153910.197000'
+(0008, 0050) Accession Number                    SH: ''
+(0008, 0060) Modality                            CS: 'CT'
+(0008, 0070) Manufacturer                        LO: 'SIEMENS'
+(0008, 0080) Institution Name                    LO: "Brigham and Women's"
+(0008, 0081) Institution Address                 ST: 'Francis Street\nBoston\nMassachusetts\nUS'
+(0008, 0090) Referring Physician's Name          PN: ''
+(0008, 1010) Station Name                        SH: 'CTAWP71160'
+(0008, 1030) Study Description                   LO: 'Pelvis^BWH_PelvisRoutine_GYN (Adult)'
+(0008, 103e) Series Description                  LO: 'Pelvis  1.5  B31f'
+(0008, 1090) Manufacturer's Model Name           LO: 'Biograph40'
+(0008, 1140)  Referenced Image Sequence   1 item(s) ---- 
+   (0008, 1150) Referenced SOP Class UID            UI: CT Image Storage
+   (0008, 1155) Referenced SOP Instance UID         UI: 1.3.12.2.1107.5.1.4.11042.30000013080916570735900000221
+   ---------
+(0008, 2112)  Source Image Sequence   1 item(s) ---- 
+   (0008, 1150) Referenced SOP Class UID            UI: 1.3.12.2.1107.5.9.1
+   (0008, 1155) Referenced SOP Instance UID         UI: 1.3.12.2.1107.5.1.4.11042.30000013080917045931200000011
+   ---------
+(0009, 0010) Private Creator                     LO: 'SIEMENS CT VA1 DUMMY'
+(0010, 0010) Patient's Name                      PN: 'GYNE PHANTOM'
+(0010, 0020) Patient ID                          LO: '1234567'
+(0010, 0030) Patient's Birth Date                DA: '20130808'
+(0010, 0040) Patient's Sex                       CS: 'F'
+(0010, 1010) Patient's Age                       AS: '001D'
+(0010, 1030) Patient's Weight                    DS: '0.4535924277'
+(0018, 0015) Body Part Examined                  CS: 'PELVIS'
+(0018, 0050) Slice Thickness                     DS: '1.5'
+(0018, 0060) KVP                                 DS: '120'
+(0018, 0090) Data Collection Diameter            DS: '500'
+(0018, 1000) Device Serial Number                LO: '11042'
+(0018, 1020) Software Version(s)                 LO: 'syngo MI.PET/CT 2011A'
+(0018, 1030) Protocol Name                       LO: 'BWH_PelvisRoutine_GYN'
+(0018, 1100) Reconstruction Diameter             DS: '145'
+(0018, 1110) Distance Source to Detector         DS: '1085.6'
+(0018, 1111) Distance Source to Patient          DS: '595'
+(0018, 1120) Gantry/Detector Tilt                DS: '0'
+(0018, 1130) Table Height                        DS: '168'
+(0018, 1140) Rotation Direction                  CS: 'CW'
+(0018, 1150) Exposure Time                       IS: '500'
+(0018, 1151) X-Ray Tube Current                  IS: '23'
+(0018, 1152) Exposure                            IS: '14'
+(0018, 1160) Filter Type                         SH: '0'
+(0018, 1170) Generator Power                     IS: '11'
+(0018, 1190) Focal Spot(s)                       DS: '1.2'
+(0018, 1200) Date of Last Calibration            DA: '20130809'
+(0018, 1201) Time of Last Calibration            TM: ''
+(0018, 1210) Convolution Kernel                  SH: 'B31f'
+(0018, 5100) Patient Position                    CS: 'HFS'
+(0018, 9306) Single Collimation Width            FD: 1.2
+(0018, 9307) Total Collimation Width             FD: 19.2
+(0018, 9309) Table Speed                         FD: 30.8
+(0018, 9310) Table Feed per Rotation             FD: 15.4
+(0018, 9311) Spiral Pitch Factor                 FD: 0.8
+(0018, 9323) Exposure Modulation Type            CS: 'XYZ_EC'
+(0018, 9324) Estimated Dose Saving               FD: 85.2327
+(0018, 9345) CTDIvol                             FD: 1.0465
+(0019, 0010) Private Creator                     LO: 'SIEMENS CT VA0  COAD'
+(0019, 1090) [Osteo Offset]                      DS: '0'
+(0019, 1092) [Osteo Regression Line Slope]       DS: '0.9236'
+(0019, 1093) [Osteo Regression Line Intercept]   DS: '-1.6565'
+(0019, 1096) [Osteo Phantom Number]              IS: '0'
+(0019, 10b0) [Feed per Rotation]                 DS: '15.4'
+(0020, 000d) Study Instance UID                  UI: 1.3.12.2.1107.5.1.4.11042.30000013080917045609300000007
+(0020, 000e) Series Instance UID                 UI: 1.3.12.2.1107.5.1.4.11042.30000013080917061609300002162
+(0020, 0010) Study ID                            SH: '4'
+(0020, 0011) Series Number                       IS: '5'
+(0020, 0012) Acquisition Number                  IS: '3'
+(0020, 0013) Instance Number                     IS: '197'
+(0020, 0032) Image Position (Patient)            DS: ['-75.3583984375', '-240.3583984375', '-298.5']
+(0020, 0037) Image Orientation (Patient)         DS: ['1', '0', '0', '0', '1', '0']
+(0020, 0052) Frame of Reference UID              UI: 1.3.12.2.1107.5.1.4.11042.30000013080917045931200000008
+(0020, 1040) Position Reference Indicator        LO: ''
+(0020, 1041) Slice Location                      DS: '-298.5'
+(0020, 4000) Image Comments                      LT: ''
+(0021, 0010) Private Creator                     LO: 'SIEMENS MED'
+(0021, 1011) [Target]                            DS: ['-3', '0']
+(0028, 0002) Samples per Pixel                   US: 1
+(0028, 0004) Photometric Interpretation          CS: 'MONOCHROME2'
+(0028, 0010) Rows                                US: 512
+(0028, 0011) Columns                             US: 512
+(0028, 0030) Pixel Spacing                       DS: ['0.283203125', '0.283203125']
+(0028, 0100) Bits Allocated                      US: 16
+(0028, 0101) Bits Stored                         US: 12
+(0028, 0102) High Bit                            US: 11
+(0028, 0103) Pixel Representation                US: 0
+(0028, 0106) Smallest Image Pixel Value          US: 0
+(0028, 0107) Largest Image Pixel Value           US: 4093
+(0028, 1050) Window Center                       DS: ['35', '400']
+(0028, 1051) Window Width                        DS: ['350', '1500']
+(0028, 1052) Rescale Intercept                   DS: '-1024'
+(0028, 1053) Rescale Slope                       DS: '1'
+(0028, 1055) Window Center & Width Explanation   LO: ['WINDOW1', 'WINDOW2']
+(0029, 0010) Private Creator                     LO: 'SIEMENS CSA HEADER'
+(0029, 0011) Private Creator                     LO: 'SIEMENS MEDCOM HEADER'
+(0029, 1008) [CSA Image Header Type]             CS: 'SOM 5'
+(0029, 1009) [CSA Image Header Version]          LO: 'VA10A 971201'
+(0029, 1010) [CSA Image Header Info]             OB: Array of 1022 bytes
+(0029, 1140)  [Application Header Sequence]   1 item(s) ---- 
+   (0029, 0010) Private Creator                     LO: 'SIEMENS MEDCOM HEADER'
+   (0029, 1041) [Application Header Type]           CS: 'SOM 5 TPOS'
+   (0029, 1042) [Application Header ID]             LO: 'SOM 5 NULLPOSITION'
+   (0029, 1043) [Application Header Version]        LO: 'VB10A 20030626'
+   (0029, 1044) [Application Header Info]           OB: '+000000000\x00\x00'
+   ---------
+(0088, 0140) Storage Media File-set UID          UI: 1.3.12.2.1107.5.1.4.11042.30000013080917100081200000006
+(0088, 0200)  Icon Image Sequence   1 item(s) ---- 
+   (0028, 0002) Samples per Pixel                   US: 1
+   (0028, 0004) Photometric Interpretation          CS: 'PALETTE COLOR'
+   (0028, 0010) Rows                                US: 64
+   (0028, 0011) Columns                             US: 64
+   (0028, 0100) Bits Allocated                      US: 8
+   (0028, 0101) Bits Stored                         US: 8
+   (0028, 0102) High Bit                            US: 7
+   (0028, 0103) Pixel Representation                US: 0
+   (0028, 1101) Red Palette Color Lookup Table Desc US: [256, 0, 8]
+   (0028, 1102) Green Palette Color Lookup Table De US: [256, 0, 8]
+   (0028, 1103) Blue Palette Color Lookup Table Des US: [256, 0, 8]
+   (0028, 1201) Red Palette Color Lookup Table Data OW: Array of 256 bytes
+   (0028, 1202) Green Palette Color Lookup Table Da OW: Array of 256 bytes
+   (0028, 1203) Blue Palette Color Lookup Table Dat OW: Array of 256 bytes
+   (7fe0, 0010) Pixel Data                          OW: Array of 4096 bytes
+   ---------
+(7fe0, 0010) Pixel Data                          OW: Array of 524288 bytes

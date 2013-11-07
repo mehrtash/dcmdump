@@ -1,0 +1,68 @@
+(0002, 0000) File Meta Information Group Length  UL: 240
+(0002, 0001) File Meta Information Version       OB: '\x00\x01'
+(0002, 0002) Media Storage SOP Class UID         UI: Enhanced MR Image Storage
+(0002, 0003) Media Storage SOP Instance UID      UI: 1.2.826.0.1.3680043.2.1143.3437002532117771703847245370286621966
+(0002, 0010) Transfer Syntax UID                 UI: Explicit VR Little Endian
+(0002, 0012) Implementation Class UID            UI: 1.2.826.0.1.3680043.2.1143.107.104.103.115.2.4.0
+(0002, 0013) Implementation Version Name         SH: 'GDCM 2.4.0'
+(0002, 0016) Source Application Entity Title     AE: 'gdcmtar'
+............................................
+(0008, 0016) SOP Class UID                       UI: Enhanced MR Image Storage
+(0008, 0018) SOP Instance UID                    UI: 1.2.826.0.1.3680043.2.1143.3437002532117771703847245370286621966
+(0008, 0020) Study Date                          DA: '20131107'
+(0008, 0030) Study Time                          TM: '184938.432916'
+(0008, 0050) Accession Number                    SH: ''
+(0008, 0060) Modality                            CS: 'MR'
+(0008, 0090) Referring Physician's Name          PN: ''
+(0010, 0010) Patient's Name                      PN: ''
+(0010, 0020) Patient ID                          LO: ''
+(0010, 0030) Patient's Birth Date                DA: ''
+(0010, 0040) Patient's Sex                       CS: ''
+(0020, 000d) Study Instance UID                  UI: 1.2.826.0.1.3680043.2.1143.5220650234761075904342502252684221288
+(0020, 000e) Series Instance UID                 UI: 1.2.826.0.1.3680043.2.1143.6996983092666054277131925924526526126
+(0020, 0010) Study ID                            SH: ''
+(0020, 0011) Series Number                       IS: ''
+(0020, 0013) Instance Number                     IS: ''
+(0028, 0002) Samples per Pixel                   US: 1
+(0028, 0004) Photometric Interpretation          CS: 'MONOCHROME2'
+(0028, 0008) Number of Frames                    IS: '5'
+(0028, 0010) Rows                                US: 512
+(0028, 0011) Columns                             US: 512
+(0028, 0100) Bits Allocated                      US: 16
+(0028, 0101) Bits Stored                         US: 16
+(0028, 0102) High Bit                            US: 15
+(0028, 0103) Pixel Representation                US: 1
+(5200, 9229)  Shared Functional Groups Sequence   1 item(s) ---- 
+   (0020, 9116)  Plane Orientation Sequence   1 item(s) ---- 
+      (0020, 0037) Image Orientation (Patient)         DS: ['1', '-0', '0', '-0', '1', '0']
+      ---------
+   (0028, 9110)  Pixel Measures Sequence   1 item(s) ---- 
+      (0028, 0030) Pixel Spacing                       DS: ['0.7813', '0.7813']
+      ---------
+   (0028, 9145)  Pixel Value Transformation Sequence   1 item(s) ---- 
+      (0028, 1052) Rescale Intercept                   DS: '0'
+      (0028, 1053) Rescale Slope                       DS: '1'
+      ---------
+   ---------
+(5200, 9230)  Per-frame Functional Groups Sequence   5 item(s) ---- 
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-199.609', '-199.609', '-26']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-199.609', '-199.609', '-13']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-199.609', '-199.609', '0']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-199.609', '-199.609', '13']
+      ---------
+   ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['-199.609', '-199.609', '26']
+      ---------
+   ---------
+(7fe0, 0010) Pixel Data                          OW: Array of 2621440 bytes

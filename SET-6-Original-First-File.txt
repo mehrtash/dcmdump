@@ -1,0 +1,148 @@
+(0002, 0000) File Meta Information Group Length  UL: 208
+(0002, 0001) File Meta Information Version       OB: '\x00\x01'
+(0002, 0002) Media Storage SOP Class UID         UI: MR Image Storage
+(0002, 0003) Media Storage SOP Instance UID      UI: 1.3.46.670589.11.0.0.11.4.2.0.8743.5.5396.2006120114374728600
+(0002, 0010) Transfer Syntax UID                 UI: Explicit VR Little Endian
+(0002, 0012) Implementation Class UID            UI: 1.3.6.1.4.1.19291.2.1
+(0002, 0013) Implementation Version Name         SH: 'OSIRIX001'
+(0002, 0016) Source Application Entity Title     AE: 'OSIRIX'
+............................................
+(0008, 0005) Specific Character Set              CS: 'ISO_IR 100'
+(0008, 0008) Image Type                          CS: ['ORIGINAL', 'PRIMARY', 'M_SE', 'M', 'SE']
+(0008, 0012) Instance Creation Date              DA: '20061201'
+(0008, 0013) Instance Creation Time              TM: '145331.000000'
+(0008, 0014) Instance Creator UID                UI: 1.3.46.670589.11.8743.5
+(0008, 0016) SOP Class UID                       UI: MR Image Storage
+(0008, 0018) SOP Instance UID                    UI: 1.3.46.670589.11.0.0.11.4.2.0.8743.5.5396.2006120114374728600
+(0008, 0020) Study Date                          DA: '20061201'
+(0008, 0021) Series Date                         DA: '20061201'
+(0008, 0022) Acquisition Date                    DA: '20061201'
+(0008, 0023) Content Date                        DA: '20061201'
+(0008, 0030) Study Time                          TM: '141645.000000'
+(0008, 0031) Series Time                         TM: '143334.390000'
+(0008, 0032) Acquisition Time                    TM: '143334.390000'
+(0008, 0033) Content Time                        TM: '143334.390000'
+(0008, 0050) Accession Number                    SH: '0'
+(0008, 0060) Modality                            CS: 'MR'
+(0008, 0070) Manufacturer                        LO: 'Philips Medical Systems'
+(0008, 0080) Institution Name                    LO: '7GEFF0GbzqCNo43Yd0,Ibu,zQSSX'
+(0008, 0090) Referring Physician's Name          PN: 'dAEvNTxZJO0E'
+(0008, 1010) Station Name                        SH: 'intera'
+(0008, 1030) Study Description                   LO: 'IRM c\xe9r\xe9brale, neuro-cr\xe2ne'
+(0008, 1032)  Procedure Code Sequence   1 item(s) ---- 
+   (0008, 0100) Code Value                          SH: 'IRMCEREB'
+   (0008, 0102) Coding Scheme Designator            SH: 'XPLORE'
+   (0008, 0104) Code Meaning                        LO: 'IRM c\xe9r\xe9brale, neuro-cr\xe2ne'
+   (0008, 010b) Context Group Extension Flag        CS: 'N'
+   ---------
+(0008, 103e) Series Description                  LO: 'T1/SE/extrp'
+(0008, 1040) Institutional Department Name       LO: 'Radiologie'
+(0008, 1090) Manufacturer's Model Name           LO: 'Achieva'
+(0008, 1110)  Referenced Study Sequence   1 item(s) ---- 
+   (0008, 1150) Referenced SOP Class UID            UI: Detached Study Management SOP Class
+   (0008, 1155) Referenced SOP Instance UID         UI: 2.16.840.1.113669.632.20.1211.10000357775
+   ---------
+(0008, 1111)  Referenced Performed Procedure Step Sequence   1 item(s) ---- 
+   (0008, 0012) Instance Creation Date              DA: '20061201'
+   (0008, 0013) Instance Creation Time              TM: '145313.000000'
+   (0008, 0014) Instance Creator UID                UI: 1.3.46.670589.11.8743.5
+   (0008, 1150) Referenced SOP Class UID            UI: Modality Performed Procedure Step SOP Class
+   (0008, 1155) Referenced SOP Instance UID         UI: 1.3.46.670589.11.0.0.11.4.2.0.8743.5.4984.2006120114164564747
+   (0020, 0013) Instance Number                     IS: '0'
+   ---------
+(0008, 1140)  Referenced Image Sequence   3 item(s) ---- 
+   (0008, 1150) Referenced SOP Class UID            UI: MR Image Storage
+   (0008, 1155) Referenced SOP Instance UID         UI: 1.3.46.670589.11.0.0.11.4.2.0.8743.5.5396.2006120114251018476
+   ---------
+   (0008, 1150) Referenced SOP Class UID            UI: MR Image Storage
+   (0008, 1155) Referenced SOP Instance UID         UI: 1.3.46.670589.11.0.0.11.4.2.0.8743.5.5396.2006120114250992473
+   ---------
+   (0008, 1150) Referenced SOP Class UID            UI: MR Image Storage
+   (0008, 1155) Referenced SOP Instance UID         UI: 1.3.46.670589.11.0.0.11.4.2.0.8743.5.5396.2006120114251001474
+   ---------
+(0010, 0010) Patient's Name                      PN: 'BRAINIX'
+(0010, 0020) Patient ID                          LO: '5Yp0E'
+(0010, 0030) Patient's Birth Date                DA: '19490301'
+(0010, 0040) Patient's Sex                       CS: '0000'
+(0010, 1030) Patient's Weight                    DS: '0'
+(0010, 21c0) Pregnancy Status                    US: 4
+(0018, 0020) Scanning Sequence                   CS: 'SE'
+(0018, 0021) Sequence Variant                    CS: 'SS'
+(0018, 0022) Scan Options                        CS: 'FC'
+(0018, 0050) Slice Thickness                     DS: '5.0'
+(0018, 0080) Repetition Time                     DS: '449.998992919921'
+(0018, 0081) Echo Time                           DS: '10.0'
+(0018, 0083) Number of Averages                  DS: '3.0'
+(0018, 0084) Imaging Frequency                   DS: '63.9074029999999'
+(0018, 0085) Imaged Nucleus                      SH: '1H'
+(0018, 0086) Echo Number(s)                      IS: '1'
+(0018, 0087) Magnetic Field Strength             DS: '1.5'
+(0018, 0088) Spacing Between Slices              DS: '6.0'
+(0018, 0089) Number of Phase Encoding Steps      IS: '240'
+(0018, 0091) Echo Train Length                   IS: '0'
+(0018, 0093) Percent Sampling                    DS: '75.0'
+(0018, 0094) Percent Phase Field of View         DS: '75.0'
+(0018, 1000) Device Serial Number                LO: '08743'
+(0018, 1020) Software Version(s)                 LO: ['1.5.4', '1.5.4.4', 'Gyroscan PMS/DICOM 2.0 MR $Id: datadefs,v 5.27 2004/10/18 06:50:', 'Gyroscan PMS/DICOM 2.0 MR $Id: datadefs,v 5.27 2004/10/18 06:50:', 'Gyroscan PMS/DICOM 2.0 MR $Id: datadefs,v 5.27 2004/10/18 06:50:']
+(0018, 1030) Protocol Name                       LO: 'T1/SE/extrp CLEAR'
+(0018, 1081) Low R-R Value                       IS: '0'
+(0018, 1082) High R-R Value                      IS: '0'
+(0018, 1083) Intervals Acquired                  IS: '0'
+(0018, 1084) Intervals Rejected                  IS: '0'
+(0018, 1088) Heart Rate                          IS: '0'
+(0018, 1100) Reconstruction Diameter             DS: '240.0'
+(0018, 1250) Receive Coil Name                   SH: 'SENSE-Head'
+(0018, 1251) Transmit Coil Name                  SH: 'B'
+(0018, 1310) Acquisition Matrix                  US: [0, 320, 240, 0]
+(0018, 1312) In-plane Phase Encoding Direction   CS: 'ROW'
+(0018, 1314) Flip Angle                          DS: '90.0'
+(0018, 5100) Patient Position                    CS: 'HFS'
+(0020, 000d) Study Instance UID                  UI: 2.16.840.1.113669.632.20.1211.10000357775
+(0020, 000e) Series Instance UID                 UI: 1.3.46.670589.11.0.0.11.4.2.0.8743.5.5396.2006120114333440565
+(0020, 0010) Study ID                            SH: '218211405'
+(0020, 0011) Series Number                       IS: '601'
+(0020, 0012) Acquisition Number                  IS: '6'
+(0020, 0013) Instance Number                     IS: '1'
+(0020, 0032) Image Position (Patient)            DS: ['-123.48501954041', '-123.85898304080', '83.2371420264244']
+(0020, 0037) Image Orientation (Patient)         DS: ['0.99971222877502', '7.8810308973E-12', '0.02398800104856', '-0.0017278126906', '0.99740260839462', '0.07200747728347']
+(0020, 0052) Frame of Reference UID              UI: 1.3.46.670589.11.0.0.11.4.2.0.8743.5.6032.2006120114240131000
+(0020, 0100) Temporal Position Identifier        IS: '1'
+(0020, 0105) Number of Temporal Positions        IS: '1'
+(0020, 1041) Slice Location                      DS: '126.000000017126'
+(0028, 0002) Samples per Pixel                   US: 1
+(0028, 0004) Photometric Interpretation          CS: 'MONOCHROME2'
+(0028, 0010) Rows                                US: 512
+(0028, 0011) Columns                             US: 512
+(0028, 0030) Pixel Spacing                       DS: ['0.46875', '0.46875']
+(0028, 0034) Pixel Aspect Ratio                  IS: ['1', '1']
+(0028, 0100) Bits Allocated                      US: 16
+(0028, 0101) Bits Stored                         US: 12
+(0028, 0102) High Bit                            US: 11
+(0028, 0103) Pixel Representation                US: 0
+(0028, 1050) Window Center                       DS: '333.799126637554'
+(0028, 1051) Window Width                        DS: '580.480349344978'
+(0028, 2110) Lossy Image Compression             CS: '00'
+(0032, 1033) Requesting Service                  LO: 'IRMCEREB'
+(0032, 1060) Requested Procedure Description     LO: 'IRM c\xe9r\xe9brale, neuro-cr\xe2ne'
+(0040, 0241) Performed Station AE Title          AE: 'INTERA'
+(0040, 0244) Performed Procedure Step Start Date DA: '20061201'
+(0040, 0245) Performed Procedure Step Start Time TM: '141645.000000'
+(0040, 0250) Performed Procedure Step End Date   DA: '20061201'
+(0040, 0251) Performed Procedure Step End Time   TM: '141645.000000'
+(0040, 0253) Performed Procedure Step ID         SH: '218211405'
+(0040, 0254) Performed Procedure Step Descriptio LO: 'IRM c\xe9r\xe9brale, neuro-cr\xe2ne'
+(0040, 0260)  Performed Protocol Code Sequence   1 item(s) ---- 
+   (0008, 0100) Code Value                          SH: 'IRMCEREB'
+   (0008, 0102) Coding Scheme Designator            SH: 'XPLORE'
+   (0008, 0104) Code Meaning                        LO: 'IRM c\xe9r\xe9brale, neuro-cr\xe2ne'
+   (0008, 010b) Context Group Extension Flag        CS: 'N'
+   ---------
+(0040, 0275)  Request Attributes Sequence   1 item(s) ---- 
+   (0040, 0007) Scheduled Procedure Step Descriptio LO: 'IRM c\xe9r\xe9brale, neuro-cr\xe2ne'
+   (0040, 0009) Scheduled Procedure Step ID         SH: 'A10029316691'
+   (0040, 1001) Requested Procedure ID              SH: 'A10029316690'
+   ---------
+(0040, 0321)  Film Consumption Sequence   0 item(s) ---- 
+(0040, 1001) Requested Procedure ID              SH: 'A10029316690'
+(2050, 0020) Presentation LUT Shape              CS: 'IDENTITY'
+(7fe0, 0010) Pixel Data                          OW: Array of 524288 bytes
