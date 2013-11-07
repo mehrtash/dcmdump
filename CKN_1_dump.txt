@@ -1,0 +1,350 @@
+(0002, 0000) File Meta Information Group Length  UL: 198
+(0002, 0001) File Meta Information Version       OB: '\x00\x01'
+(0002, 0002) Media Storage SOP Class UID         UI: Enhanced MR Image Storage
+(0002, 0003) Media Storage SOP Instance UID      UI: 1.3.6.1.4.1.5962.1.1.5014.7001.1.1.1166546115.14677
+(0002, 0010) Transfer Syntax UID                 UI: Explicit VR Little Endian
+(0002, 0012) Implementation Class UID            UI: 1.3.6.1.4.1.5962.2
+(0002, 0013) Implementation Version Name         SH: 'DCTOOL100'
+(0002, 0016) Source Application Entity Title     AE: 'CLUNIE1'
+
+(0008, 0005) Specific Character Set              CS: 'ISO_IR 100'
+(0008, 0008) Image Type                          CS: ['ORIGINAL', 'PRIMARY', 'T1', 'NONE']
+(0008, 0012) Instance Creation Date              DA: '20061219'
+(0008, 0013) Instance Creation Time              TM: '152318'
+(0008, 0014) Instance Creator UID                UI: 1.3.6.1.4.1.5962.3
+(0008, 0016) SOP Class UID                       UI: Enhanced MR Image Storage
+(0008, 0018) SOP Instance UID                    UI: 1.3.6.1.4.1.5962.1.1.5014.7001.1.1.1166546115.14677
+(0008, 0020) Study Date                          DA: '20061219'
+(0008, 0021) Series Date                         DA: '20061219'
+(0008, 0023) Content Date                        DA: '20061219'
+(0008, 002a) Acquisition DateTime                DT: '20061219163408'
+(0008, 0030) Study Time                          TM: '154403'
+(0008, 0031) Series Time                         TM: '163408'
+(0008, 0033) Content Time                        TM: '163408'
+(0008, 0050) Accession Number                    SH: '9995014'
+(0008, 0060) Modality                            CS: 'MR'
+(0008, 0070) Manufacturer                        LO: 'Acme Medical Devices'
+(0008, 0080) Institution Name                    LO: 'St. Nowhere Hospital'
+(0008, 0090) Referring Physician's Name          PN: 'Thomas^Albert'
+(0008, 0201) Timezone Offset From UTC            SH: '-0500'
+(0008, 1010) Station Name                        SH: 'CONSOLE01'
+(0008, 1030) Study Description                   LO: 'Knee 3D'
+(0008, 103e) Series Description                  LO: 'T1 Axial'
+(0008, 1050) Performing Physician's Name         PN: 'Smith^John'
+(0008, 1060) Name of Physician(s) Reading Study  PN: 'Smith^John'
+(0008, 1070) Operators' Name                     PN: 'Jones^Molly'
+(0008, 1090) Manufacturer's Model Name           LO: 'Super Dooper Scanner'
+(0008, 9121)  Referenced Raw Data Sequence   1 item(s) ---- 
+   (0008, 1115)  Referenced Series Sequence   1 item(s) ---- 
+      (0008, 1199)  Referenced SOP Sequence   1 item(s) ---- 
+         (0008, 1150) Referenced SOP Class UID            UI: Raw Data Storage
+         (0008, 1155) Referenced SOP Instance UID         UI: 1.3.6.1.4.1.5962.1.9.5014.1.1166546115.14677
+         ---------
+      (0020, 000e) Series Instance UID                 UI: 1.3.6.1.4.1.5962.1.3.5014.1.1166546115.14677
+      ---------
+   (0020, 000d) Study Instance UID                  UI: 1.3.6.1.4.1.5962.1.2.5014.1166546115.14677
+   ---------
+(0008, 9205) Pixel Presentation                  CS: 'MONOCHROME'
+(0008, 9206) Volumetric Properties               CS: 'VOLUME'
+(0008, 9207) Volume Based Calculation Technique  CS: 'NONE'
+(0008, 9208) Complex Image Component             CS: 'MAGNITUDE'
+(0008, 9209) Acquisition Contrast                CS: 'T1'
+(0010, 0010) Patient's Name                      PN: 'Knee^3D'
+(0010, 0020) Patient ID                          LO: 'MF-0000014'
+(0010, 0030) Patient's Birth Date                DA: '19500704'
+(0010, 0040) Patient's Sex                       CS: 'M'
+(0010, 1010) Patient's Age                       AS: '052Y'
+(0010, 1020) Patient's Size                      DS: '1.6'
+(0010, 1030) Patient's Weight                    DS: '75'
+(0010, 21b0) Additional Patient History          LT: ''
+(0018, 0023) MR Acquisition Type                 CS: '3D'
+(0018, 0087) Magnetic Field Strength             DS: '0.5'
+(0018, 1000) Device Serial Number                LO: '123456'
+(0018, 1020) Software Version(s)                 LO: '1.00'
+(0018, 1050) Spatial Resolution                  DS: '0.937500'
+(0018, 5100) Patient Position                    CS: 'FFS'
+(0018, 9004) Content Qualification               CS: 'PRODUCT'
+(0018, 9005) Pulse Sequence Name                 SH: 'UNNAMED'
+(0018, 9008) Echo Pulse Sequence                 CS: 'GRADIENT'
+(0018, 9012) Multi-planar Excitation             CS: 'NO'
+(0018, 9014) Phase Contrast                      CS: 'NO'
+(0018, 9015) Time of Flight Contrast             CS: 'NO'
+(0018, 9017) Steady State Pulse Sequence         CS: 'FREE_PRECESSION'
+(0018, 9018) Echo Planar Pulse Sequence          CS: 'NO'
+(0018, 9024) Saturation Recovery                 CS: 'NO'
+(0018, 9025) Spectrally Selected Suppression     CS: 'NONE'
+(0018, 9029) Oversampling Phase                  CS: 'NONE'
+(0018, 9032) Geometry of k-Space Traversal       CS: 'RECTILINEAR'
+(0018, 9033) Segmented k-Space Traversal         CS: 'SINGLE'
+(0018, 9034) Rectilinear Phase Encode Reordering CS: 'SEGMENTED'
+(0018, 9064) k-space Filtering                   CS: 'NONE'
+(0018, 9073) Acquisition Duration                FD: 424.00048828124994
+(0018, 9093) Number of k-Space Trajectories      US: 1
+(0018, 9094) Coverage of k-Space                 CS: 'FULL'
+(0018, 9100) Resonant Nucleus                    CS: '1H'
+(0018, 9174) Applicable Safety Standard Agency   CS: 'FDA'
+(0020, 000d) Study Instance UID                  UI: 1.3.6.1.4.1.5962.1.2.5014.1166546115.14677
+(0020, 000e) Series Instance UID                 UI: 1.3.6.1.4.1.5962.1.3.5014.7001.1166546115.14677
+(0020, 0010) Study ID                            SH: '05014'
+(0020, 0011) Series Number                       IS: '7001'
+(0020, 0012) Acquisition Number                  IS: '1'
+(0020, 0013) Instance Number                     IS: '1'
+(0020, 0052) Frame of Reference UID              UI: 1.3.6.1.4.1.5962.1.4.5014.1.1166546115.14677
+(0020, 1040) Position Reference Indicator        LO: ''
+(0020, 9161) Concatenation UID                   UI: 1.3.6.1.4.1.5962.1.7.5014.7001.1.1166546115.14677
+(0020, 9162) In-concatenation Number             US: 1
+(0020, 9163) In-concatenation Total Number       US: 10
+(0020, 9221)  Dimension Organization Sequence   0 item(s) ---- 
+(0020, 9222)  Dimension Index Sequence   0 item(s) ---- 
+(0020, 9228) Concatenation Frame Offset Number   UL: 0
+(0028, 0002) Samples per Pixel                   US: 1
+(0028, 0004) Photometric Interpretation          CS: 'MONOCHROME2'
+(0028, 0008) Number of Frames                    IS: '10'
+(0028, 0010) Rows                                US: 256
+(0028, 0011) Columns                             US: 256
+(0028, 0100) Bits Allocated                      US: 16
+(0028, 0101) Bits Stored                         US: 16
+(0028, 0102) High Bit                            US: 15
+(0028, 0103) Pixel Representation                US: 1
+(0028, 0301) Burned In Annotation                CS: 'NO'
+(0028, 2110) Lossy Image Compression             CS: '00'
+(0040, 0555)  Acquisition Context Sequence   0 item(s) ---- 
+(2050, 0020) Presentation LUT Shape              CS: 'IDENTITY'
+(5200, 9229)  Shared Functional Groups Sequence   1 item(s) ---- 
+   (0018, 9006)  MR Imaging Modifier Sequence   1 item(s) ---- 
+      (0018, 0095) Pixel Bandwidth                     DS: '48.8281'
+      (0018, 9020) Magnetization Transfer              CS: 'NONE'
+      (0018, 9022) Blood Signal Nulling                CS: 'NO'
+      (0018, 9028) Tagging                             CS: 'NONE'
+      (0018, 9098) Transmitter Frequency               FD: 21.290405273437496
+      ---------
+   (0018, 9042)  MR Receive Coil Sequence   1 item(s) ---- 
+      (0018, 1250) Receive Coil Name                   SH: 'QUAD KNEE'
+      (0018, 9041) Receive Coil Manufacturer Name      LO: 'Acme Medical Devices'
+      (0018, 9043) Receive Coil Type                   CS: 'VOLUME'
+      (0018, 9044) Quadrature Receive Coil             CS: 'YES'
+      ---------
+   (0018, 9049)  MR Transmit Coil Sequence   1 item(s) ---- 
+      (0018, 1251) Transmit Coil Name                  SH: 'BODY'
+      (0018, 9050) Transmit Coil Manufacturer Name     LO: 'Acme Medical Devices'
+      (0018, 9051) Transmit Coil Type                  CS: 'BODY'
+      ---------
+   (0018, 9112)  MR Timing and Related Parameters Sequence   1 item(s) ---- 
+      (0018, 0080) Repetition Time                     DS: '21.2000'
+      (0018, 0091) Echo Train Length                   IS: '1'
+      (0018, 1314) Flip Angle                          DS: '30.0000'
+      (0018, 9176)  Operating Mode Sequence   3 item(s) ---- 
+         (0018, 9177) Operating Mode Type                 CS: 'STATIC FIELD'
+         (0018, 9178) Operating Mode                      CS: 'IEC_NORMAL'
+         ---------
+         (0018, 9177) Operating Mode Type                 CS: 'RF'
+         (0018, 9178) Operating Mode                      CS: 'IEC_NORMAL'
+         ---------
+         (0018, 9177) Operating Mode Type                 CS: 'GRADIENT'
+         (0018, 9178) Operating Mode                      CS: 'IEC_NORMAL'
+         ---------
+      (0018, 9180) Gradient Output Type                CS: 'ELECTRIC_FIELD'
+      (0018, 9182) Gradient Output                     FD: 0.0
+      (0018, 9239)  Specific Absorption Rate Sequence   1 item(s) ---- 
+         (0018, 9179) Specific Absorption Rate Definition CS: 'IEC_WHOLE_BODY'
+         (0018, 9181) Specific Absorption Rate Value      FD: 0.0079830065369606
+         ---------
+      (0018, 9240) RF Echo Train Length                US: 0
+      (0018, 9241) Gradient Echo Train Length          US: 1
+      ---------
+   (0018, 9114)  MR Echo Sequence   1 item(s) ---- 
+      (0018, 9082) Effective Echo Time                 FD: 4.300003051757812
+      ---------
+   (0018, 9115)  MR Modifier Sequence   1 item(s) ---- 
+      (0018, 9009) Inversion Recovery                  CS: 'NO'
+      (0018, 9010) Flow Compensation                   CS: 'NONE'
+      (0018, 9016) Spoiling                            CS: 'GRADIENT'
+      (0018, 9021) T2 Preparation                      CS: 'NO'
+      (0018, 9026) Spectrally Selected Excitation      CS: 'NONE'
+      (0018, 9027) Spatial Pre-saturation              CS: 'NONE'
+      (0018, 9036) Partial Fourier Direction           CS: 'FREQUENCY'
+      (0018, 9077) Parallel Acquisition                CS: 'NO'
+      (0018, 9081) Partial Fourier                     CS: 'YES'
+      ---------
+   (0018, 9119)  MR Averages Sequence   1 item(s) ---- 
+      (0018, 0083) Number of Averages                  DS: '1.00000'
+      ---------
+   (0018, 9125)  MR FOV/Geometry Sequence   1 item(s) ---- 
+      (0018, 0093) Percent Sampling                    DS: '100.000'
+      (0018, 0094) Percent Phase Field of View         DS: '100.000'
+      (0018, 1312) In-plane Phase Encoding Direction   CS: 'COLUMN'
+      (0018, 9058) MR Acquisition Frequency Encoding S US: 256
+      (0018, 9231) MR Acquisition Phase Encoding Steps US: 192
+      (0018, 9232) MR Acquisition Phase Encoding Steps US: 100
+      ---------
+   (0018, 9226)  MR Image Frame Type Sequence   1 item(s) ---- 
+      (0008, 9007) Frame Type                          CS: ['ORIGINAL', 'PRIMARY', 'T1', 'NONE']
+      (0008, 9205) Pixel Presentation                  CS: 'MONOCHROME'
+      (0008, 9206) Volumetric Properties               CS: 'VOLUME'
+      (0008, 9207) Volume Based Calculation Technique  CS: 'NONE'
+      (0008, 9208) Complex Image Component             CS: 'MAGNITUDE'
+      (0008, 9209) Acquisition Contrast                CS: 'T1'
+      ---------
+   (0020, 9071)  Frame Anatomy Sequence   1 item(s) ---- 
+      (0008, 2218)  Anatomic Region Sequence   1 item(s) ---- 
+         (0008, 0100) Code Value                          SH: 'T-D9200'
+         (0008, 0102) Coding Scheme Designator            SH: 'SNM3'
+         (0008, 0104) Code Meaning                        LO: 'Knee'
+         ---------
+      (0020, 9072) Frame Laterality                    CS: 'U'
+      ---------
+   (0020, 9116)  Plane Orientation Sequence   1 item(s) ---- 
+      (0020, 0037) Image Orientation (Patient)         DS: ['1.00000', '0.00000', '0.00000', '0.00000', '1.00000', '0.00000']
+      ---------
+   (0028, 9110)  Pixel Measures Sequence   1 item(s) ---- 
+      (0018, 0050) Slice Thickness                     DS: '1.00000'
+      (0028, 0030) Pixel Spacing                       DS: ['0.703125', '0.703125']
+      ---------
+   (0028, 9145)  Pixel Value Transformation Sequence   1 item(s) ---- 
+      (0028, 1052) Rescale Intercept                   DS: '0.00000'
+      (0028, 1053) Rescale Slope                       DS: '1.00000'
+      (0028, 1054) Rescale Type                        LO: 'US'
+      ---------
+   ---------
+(5200, 9230)  Per-frame Functional Groups Sequence   10 item(s) ---- 
+   (0020, 9111)  Frame Content Sequence   1 item(s) ---- 
+      (0018, 9074) Frame Acquisition DateTime          DT: '20061219163408'
+      (0018, 9151) Frame Reference DateTime            DT: '20061219163740'
+      (0018, 9220) Frame Acquisition Duration          FD: 424000.24999999994
+      (0020, 9156) Frame Acquisition Number            US: 1
+      ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['1.60000', '-99.9000', '-35.1000']
+      ---------
+   (0028, 9132)  Frame VOI LUT Sequence   1 item(s) ---- 
+      (0028, 1050) Window Center                       DS: '239.000'
+      (0028, 1051) Window Width                        DS: '421.000'
+      ---------
+   ---------
+   (0020, 9111)  Frame Content Sequence   1 item(s) ---- 
+      (0018, 9074) Frame Acquisition DateTime          DT: '20061219163408'
+      (0018, 9151) Frame Reference DateTime            DT: '20061219163740'
+      (0018, 9220) Frame Acquisition Duration          FD: 424000.24999999994
+      (0020, 9156) Frame Acquisition Number            US: 1
+      ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['1.60000', '-99.9000', '-34.1000']
+      ---------
+   (0028, 9132)  Frame VOI LUT Sequence   1 item(s) ---- 
+      (0028, 1050) Window Center                       DS: '234.000'
+      (0028, 1051) Window Width                        DS: '432.000'
+      ---------
+   ---------
+   (0020, 9111)  Frame Content Sequence   1 item(s) ---- 
+      (0018, 9074) Frame Acquisition DateTime          DT: '20061219163408'
+      (0018, 9151) Frame Reference DateTime            DT: '20061219163740'
+      (0018, 9220) Frame Acquisition Duration          FD: 424000.24999999994
+      (0020, 9156) Frame Acquisition Number            US: 1
+      ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['1.60000', '-99.9000', '-33.1000']
+      ---------
+   (0028, 9132)  Frame VOI LUT Sequence   1 item(s) ---- 
+      (0028, 1050) Window Center                       DS: '241.000'
+      (0028, 1051) Window Width                        DS: '455.000'
+      ---------
+   ---------
+   (0020, 9111)  Frame Content Sequence   1 item(s) ---- 
+      (0018, 9074) Frame Acquisition DateTime          DT: '20061219163408'
+      (0018, 9151) Frame Reference DateTime            DT: '20061219163740'
+      (0018, 9220) Frame Acquisition Duration          FD: 424000.24999999994
+      (0020, 9156) Frame Acquisition Number            US: 1
+      ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['1.60000', '-99.9000', '-32.1000']
+      ---------
+   (0028, 9132)  Frame VOI LUT Sequence   1 item(s) ---- 
+      (0028, 1050) Window Center                       DS: '257.000'
+      (0028, 1051) Window Width                        DS: '490.000'
+      ---------
+   ---------
+   (0020, 9111)  Frame Content Sequence   1 item(s) ---- 
+      (0018, 9074) Frame Acquisition DateTime          DT: '20061219163408'
+      (0018, 9151) Frame Reference DateTime            DT: '20061219163740'
+      (0018, 9220) Frame Acquisition Duration          FD: 424000.24999999994
+      (0020, 9156) Frame Acquisition Number            US: 1
+      ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['1.60000', '-99.9000', '-31.1000']
+      ---------
+   (0028, 9132)  Frame VOI LUT Sequence   1 item(s) ---- 
+      (0028, 1050) Window Center                       DS: '277.000'
+      (0028, 1051) Window Width                        DS: '526.000'
+      ---------
+   ---------
+   (0020, 9111)  Frame Content Sequence   1 item(s) ---- 
+      (0018, 9074) Frame Acquisition DateTime          DT: '20061219163408'
+      (0018, 9151) Frame Reference DateTime            DT: '20061219163740'
+      (0018, 9220) Frame Acquisition Duration          FD: 424000.24999999994
+      (0020, 9156) Frame Acquisition Number            US: 1
+      ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['1.60000', '-99.9000', '-30.1000']
+      ---------
+   (0028, 9132)  Frame VOI LUT Sequence   1 item(s) ---- 
+      (0028, 1050) Window Center                       DS: '290.000'
+      (0028, 1051) Window Width                        DS: '556.000'
+      ---------
+   ---------
+   (0020, 9111)  Frame Content Sequence   1 item(s) ---- 
+      (0018, 9074) Frame Acquisition DateTime          DT: '20061219163408'
+      (0018, 9151) Frame Reference DateTime            DT: '20061219163740'
+      (0018, 9220) Frame Acquisition Duration          FD: 424000.24999999994
+      (0020, 9156) Frame Acquisition Number            US: 1
+      ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['1.60000', '-99.9000', '-29.1000']
+      ---------
+   (0028, 9132)  Frame VOI LUT Sequence   1 item(s) ---- 
+      (0028, 1050) Window Center                       DS: '301.000'
+      (0028, 1051) Window Width                        DS: '577.000'
+      ---------
+   ---------
+   (0020, 9111)  Frame Content Sequence   1 item(s) ---- 
+      (0018, 9074) Frame Acquisition DateTime          DT: '20061219163409'
+      (0018, 9151) Frame Reference DateTime            DT: '20061219163741'
+      (0018, 9220) Frame Acquisition Duration          FD: 424000.24999999994
+      (0020, 9156) Frame Acquisition Number            US: 1
+      ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['1.60000', '-99.9000', '-28.1000']
+      ---------
+   (0028, 9132)  Frame VOI LUT Sequence   1 item(s) ---- 
+      (0028, 1050) Window Center                       DS: '309.000'
+      (0028, 1051) Window Width                        DS: '591.000'
+      ---------
+   ---------
+   (0020, 9111)  Frame Content Sequence   1 item(s) ---- 
+      (0018, 9074) Frame Acquisition DateTime          DT: '20061219163409'
+      (0018, 9151) Frame Reference DateTime            DT: '20061219163741'
+      (0018, 9220) Frame Acquisition Duration          FD: 424000.24999999994
+      (0020, 9156) Frame Acquisition Number            US: 1
+      ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['1.60000', '-99.9000', '-27.1000']
+      ---------
+   (0028, 9132)  Frame VOI LUT Sequence   1 item(s) ---- 
+      (0028, 1050) Window Center                       DS: '312.000'
+      (0028, 1051) Window Width                        DS: '599.000'
+      ---------
+   ---------
+   (0020, 9111)  Frame Content Sequence   1 item(s) ---- 
+      (0018, 9074) Frame Acquisition DateTime          DT: '20061219163409'
+      (0018, 9151) Frame Reference DateTime            DT: '20061219163741'
+      (0018, 9220) Frame Acquisition Duration          FD: 424000.24999999994
+      (0020, 9156) Frame Acquisition Number            US: 1
+      ---------
+   (0020, 9113)  Plane Position Sequence   1 item(s) ---- 
+      (0020, 0032) Image Position (Patient)            DS: ['1.60000', '-99.9000', '-26.1000']
+      ---------
+   (0028, 9132)  Frame VOI LUT Sequence   1 item(s) ---- 
+      (0028, 1050) Window Center                       DS: '314.000'
+      (0028, 1051) Window Width                        DS: '600.000'
+      ---------
+   ---------
+(7fe0, 0010) Pixel Data                          OW: Array of 1310720 bytes
