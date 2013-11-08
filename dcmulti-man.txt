@@ -1,0 +1,347 @@
+DCMULTI(1)             DICOM PS3 - Make multiframe image            DCMULTI(1)
+
+
+
+NAME
+       dcmulti - ACR/NEMA DICOM PS3 ... DICOM PS3 - Make multiframe image from
+       single frames
+
+SYNOPSIS
+       dcmulti " inputfile1  [  inputfile2  ...  ]"  [  -v|verbose|vv|veryver‐
+                 bose|vvv|veryveryverbose  ] [ -l ] [ -noicons ] [ -position ]
+                 [ -sortby  elementname [  -descending  ]  ]  [  -nomrmf  ]  [
+                 -makestack  [  -stackdescending  ]  ] [ -temporalposition ] [
+                 -dimension  elementname functionalgroupname ] [  -multidimen‐
+                 sion  elementname functionalgroupname organizationlabel orga‐
+                 nizationuid ] [ -addreferenced  class instance frames purpos‐
+                 escheme  code mng vers [ -perframereference ] ] [ -addderiva‐
+                 tion  class instance frames  derivationcheme  code  mng  vers
+                 purposecheme  code  mng  vers  [  -perframederivation  ]  ] [
+                 -addsatslab  thickness orientX orientY orientZ midpointX mid‐
+                 pointY  midpointZ ] [ -addcolorlut  numberofentries firstval‐
+                 uemapped  firstred  incrred  firstgreen  incrgreen  firstblue
+                 incrblue  ] [ -accumulateduration ] [ -derivedurationfromtim‐
+                 ing ] [ -addnonderivedstuffanyway ] [ -addpositionstuffanyway
+                 ]  [ -addtimingstuffanyway ] [ -phasecontrast ] [ -minimalat‐
+                 tributes ] [ -nowindow ] [ -enhancedcontrast ] [  -sync  ]  [
+                 -copyall  ]  [  -input-nometa  ] [ -input-ts  uid ] [ -input-
+                 default ] [ -input-byteorder|-input-endian   big|little  ]  [
+                 -input-vr   implicit|explicit ] [ -d|-delete  deletekeyword ]
+                 ...  [ -r|-replace|-rb|-replace-before  replacekeyword values
+                 ]  ...   [ -ra|-replace-after  replacekeyword values ] ...  [
+                 -of|-output-file|>  name ] [  -n|-nometa|-output-nometa  ]  [
+                 -n|-justmeta|-output-justmeta  ]  [ -n|-implicitmeta|-output-
+                 implicitmeta ] [ -ts|-output-ts|-output-transfersyntax  uid ]
+                 [   -output-default   ]   [  -output-byteorder|-output-endian
+                 big|little ] [ -output-vr  implicit|explicit  ]  [  -s|-stamp
+                 uiddatetimestamp   ]   [   -instancecreationdate   date  ]  [
+                 -instancecreationtime  time ] [ -timezoneoffsetfromutc   off‐
+                 set  ]  [  -addlengths  ]  [ -addlengthtoend ][ -tiff|tif ] [
+                 -removeprivate ] [ -removeinstanceuid ]  [  -noadddicom  ]  [
+                 -nodisclaimer ] [ -disambiguateseriesbydescription ]
+
+DESCRIPTION
+       dcmulti  reads  the  named  dicom  single  frame input files, checks to
+       ensure that patient, study, series and image information,  are  consis‐
+       tent and concatenates all the images into a multiframe image as output.
+
+       Moderately  extensive  checking  is  performed  to ensure that patient,
+       study and series level identifiers and UIDs are consistent. Image level
+       attributes  related  to pixel representation (i.e. the Image Pixel Mod‐
+       ule) are also checked, since inconsistency in  these  will  render  the
+       output  meaningless.  For specific modalities, such as CT and MR, other
+       image level attributes are checked for  consistency,  such  as  rescale
+       parameters, pulse sequence parameters and slice thickness.
+
+       It  is recommended that before building a multiframe object, the source
+       images be manually checked for consistency of important attributes, for
+       example by using the dctable(1) utility on the same set of images.
+
+       The  images  will be concatenated in the order specified on the command
+       line, unless the -sortby option is specified, in which case  they  will
+       first be sorted in ascending order (unless -descending is specified) by
+       the values of the attribute. Any numeric attribute that is expected  to
+       be present in the images can be specified.
+
+       In addition, either ImagePositionPatient or ImageOrientationPatient may
+       be specified as sort keys. These multi-valued  attributes  are  handled
+       specially for sorting.
+
+       For  ImagePositionPatient,  the images will be sorted by relative posi‐
+       tion along a vector normal to the plane of the first image (which  ide‐
+       ally  be  the  same  plane and normal for all images though this is not
+       required). For example, for axial images that are oriented as if viewed
+       from below, images closer to the feet will sort before images closer to
+       the head, since the normal is directed from the image plane toward  the
+       viewer,  and the DICOM coordinate system along the Z axis values toward
+       the head are more positive.  Note that the first image supplied on  the
+       command  line  does  not have to be the first in the volume for this to
+       work.
+
+       Note that a similar effect can be achieved by sorting on SliceLocation,
+       but  this  is  an  optional attribute, may not be present or completed,
+       does not have a  defined  sign  with  respect  to  orientation  of  the
+       patient,  and  may  not correctly reflect complicated oblique slices in
+       MR.
+
+       For ImageOrientationPatient, the images  will  be  sorted  by  relative
+       angle between vectors normal to the planes of the current image and the
+       first image. Ideally, all these normals should be coplanar for the sort
+       to  be  meaningful.   Note that the first image supplied on the command
+       line does not have to be the first rotation in the volume for  this  to
+       work.
+
+       The output file will contain a Number Of Frames attribute with the num‐
+       ber of frames generated (equal to the number of input files), but there
+       is no provision to automatically generate a Frame Increment Pointer. If
+       necessary this can be added on  the  command  line  together  with  the
+       appropriate  vectors  of  values,  using  the -r option, or built using
+       ancreate(1) and merged into the output of this utility with dcmerge(1).
+
+       The output file will contain attributes for the general and  SOP  Class
+       specific modules copied from the first image, unless -copyall is speci‐
+       fied in which case it will contain all the same attributes as  the  the
+       first  sorted input file. This includes patient, study and series level
+       identifiers and UIDs, except that Instance Number will be set to 1  and
+       a new SOP Instance UID will be generated. Any Data Set Trailing Padding
+       in the input images will also be removed.
+
+       Note especially that the SOPClassUID will not be changed,  that  is  it
+       will  be  the same as the (first sorted) input file, with the exception
+       of the SC and MR SOP Classes, in  which  case  an  appropriate  new  SC
+       multi-frame  oir MR SOP Class will be chosen. In the case of CT images,
+       where multiframe images are not allowed, this will generate an  illegal
+       DICOM  dataset.  The SOPClassUID can be replaced on the command line by
+       using the -r option, but since there is no standard SOP Class for  mul‐
+       tiframe  CT,  it  is  not  obvious what the output SOP Class should be.
+       Until the standard is extended, the use of a private SOP class is  rec‐
+       ommended.  In  the  case where the multiframe output of this utility is
+       only being used as an intermediate step to another multiframe file for‐
+       mat or for import into a viewing application that can't sort slices but
+       can read volumes, then the issue of SOP Class can  probably  safely  be
+       ignored.
+
+       The input encoding of the file will be automatically determined, or can
+       be explicitly specified in pathological cases using the  input  options
+       described in dcintro(1).
+
+       The output encoding of the file needs to have the same byte order (lit‐
+       tle or big endian) as the input files.
+
+OPTIONS
+       The verbose output goes to standard error.
+
+       The basic input switches are described in dcintro(1). Options  specific
+       to this program are:
+
+       -v|verbose
+              List sort order and which file contributres to which frame as it
+              is written.
+
+       -vv|veryverbose
+       -vvv|veryveryverbose
+              Dump contents of files and data structures with increasing  ver‐
+              bosity.
+
+       -sortby elementname [-descending]
+              Sort  by the specified DICOM element name in ascending (default)
+              or descending numeric order.
+
+       -nomrmf
+              Do not make MR multi-frame, and leave the single  frame  MR  SOP
+              Class UID alone.
+
+       -makestack [-stackdescending]
+              Build MR multi-frame object stacks from position and orientation
+              information and assign each frame a Stack ID and In-stack  Posi‐
+              tion Number. The order in which the frames in a stack are sorted
+              by position along the normal to the plane orientation is ascend‐
+              ing unless descending is specified. Note that the frames are not
+              physically re-organized by stack ... only  the  identifiers  are
+              created.  The  sort  direction  (ascending or descending) of the
+              stack may be different from the direction of the encoded  frames
+              themselves.
+
+       -temporalposition
+              For  MR  multi-frame,  find  temporal positions based on Trigger
+              Time, or Acquisition Time if Trigger Time is absent, and  insert
+              Temporal  Position Index into Frame Content Macro. Note that the
+              frames are not physically re-organized by temporal position  ...
+              only the identifiers are created.
+
+       -dimension elementname functionalgroupname
+       -multidimension elementname functionalgroupname organizationlabel orga‐
+       nizationuid
+              Zero or more dimensions may be specified, those encountered ear‐
+              lier  on  the  command  line being the major dimensions (varying
+              slowest). It is necessary to specify both the name of  the  ele‐
+              ment that is used as the index of the dimension (e.g. TriggerDe‐
+              layTime, InStackPositionNumber) as  well  as  the  name  of  the
+              sequence  of the functional group in which it is contained (e.g.
+              CardiacTriggerSequence,  FrameContentSequence).  The   specified
+              element  should  be  of a numeric VR, except for selected excep‐
+              tions that include FrameType  and  ContrastBolusAgentPhase,  for
+              which pre-determined sort orders are defined.  If the -dimension
+              argument is used, there is only a single dimension organization.
+              If  the  -multidimension  argument  is  used, then more than one
+              dimension organization (set of dimensions) can be specified, and
+              these  are distinguished from each other if either the specified
+              label or the specified uid are distinct.  Either  the  label  or
+              the  uid  or  both  may be blank. If they are both blank, then a
+              default dimension organization will be used (this  is  then  the
+              same  as  using -dimension). If the uid is blank then a uid will
+              be generated by the application for each dimension  organization
+              (including the default and those with distinct labels).
+
+       -addreferenced class instance frames purposescheme code mng vers
+              Add  Referenced  Image  Sequence  using  the supplied parameters
+              (frame may be zero length if whole image).
+
+       -perframereference
+              Add the Referenced Image Sequence to the Per-frame  rather  than
+              Shared functional groups sequence (even though all identical).
+
+       -addderivation class instance frames derivationcheme code mng vers pur‐
+       posecheme code mng vers
+              Add Derivation Image  Sequence  using  the  supplied  parameters
+              (frame may be zero length if whole image).
+       -perframederivation
+              Add  the  Derivation Image Sequence to the Per-frame rather than
+              Shared functional groups sequence (even though all identical).
+
+       -addsatslab thickness orientX orientY orientZ midpointX midpointY  mid‐
+       pointZ
+              Add Saturation Slab using the supplied parameters.
+
+       -addcolorlut  numberofentries  firstvaluemapped firstred incrred first‐
+       green incrgreen firstblue incrblue
+              Add a Supplemental Color LUT using the supplied parameters.
+
+       -accumulateduration
+              Summate frame acquisition durations to compute acquisition dura‐
+              tion  for whole object (e.g. for a cine MR acquisition). Default
+              is to expect that frame and image acquisition durations are  the
+              same
+
+       -derivedurationfromtiming
+              Derive  a  value  for frame acquisition duration and acquisition
+              duration from MR timing parameters like number of averages, num‐
+              ber  of frequency encoding steps, repetition time and echo train
+              length.
+
+       -addnonderivedstuffanyway
+              Normally at the image and frame level  if  the  first  value  of
+              Image  Type  is DERIVED, acquisition specific stuff is not added
+              ... this option forces it to be added anyway.
+
+       -addpositionstuffanyway
+              Normally at the image and frame level  if  the  first  value  of
+              Image  Type  is  DERIVED,  position and orientation stuff is not
+              added ... this option forces it to be added anyway.
+
+       -addtimingstuffanyway
+              Normally at the image and frame level  if  the  first  value  of
+              Image Type is DERIVED, acquisition and reference timing stuff is
+              not added ... this option forces it to be added anyway.
+
+       -phasecontrast
+              Add MR Velocity Encoding Sequence.
+
+       -minimalattributes
+              Only add minimal required standard attributes for  the  Enhanced
+              CT or MR SOP Class and nothing more.
+
+       -nowindow
+              Do not add.
+
+       -enhancedcontrast
+              Add  Enhanced  Contrast/Bolus  Module  and  Contrast/Bolus Usage
+              Sequence. Requires non-standard multivalued string attributes in
+              source.
+
+       -sync
+              Add  the  Synchronization  Module.  Replaces any Synchronization
+              Frame of Reference UID  already  present  in  source,  any  adds
+              default  values for minimal attributes if not already present in
+              source.
+
+       -copyall
+              Copy all attributes from first file rather than  only  those  in
+              modules thought to be relevant to the multi-frame IOD being cre‐
+              ated.
+
+ENVIRONMENT
+
+
+EXAMPLES
+
+       % dcmulti IMAGES/[0-9]* -verbose >MFIMAGE
+       wrote frame 0 from filename <IMAGES/0>
+       wrote frame 1 from filename <IMAGES/1>
+        ...
+
+       % dcmulti IMAGES/[0-9]*  -verbose  -sortby  InstanceNumber  -descending
+       >MFIMAGE
+       After sorting
+       InstanceNumber[0] = 10 in IMAGES/9
+       InstanceNumber[1] = 9 in IMAGES/8
+        ...
+       wrote frame 0 from filename <IMAGES/9>
+       wrote frame 1 from filename <IMAGES/8>
+        ...
+
+       % dcmulti IMAGES/[0-9]* -verbose -sortby ImageOrientationPatient >MFIM‐
+       AGE
+       After sorting
+       ImageOrientationPatient[0] = 0 in IMAGES/0
+       ImageOrientationPatient[1] = 45 in IMAGES/1
+        ...
+       wrote frame 0 from filename <IMAGES/0>
+       wrote frame 1 from filename <IMAGES/1>
+        ...
+
+       % dcmulti IMAGES/[0-9]* -verbose -sortby ImagePositionPatient >MFIMAGE
+       After sorting
+       ImageOrientationPatient[0] = -124.262 in IMAGES/0
+       ImageOrientationPatient[1] = -120.872 in IMAGES/1
+        ...
+       wrote frame 0 from filename <IMAGES/0>
+       wrote frame 1 from filename <IMAGES/1>
+        ...
+
+FILES
+
+
+SEE ALSO
+       dcintro(1), ancreate(1), dcmerge(1), dctable(1)
+
+AUTHOR
+       Copyright (C) 1993-2010. David A. Clunie DBA PixelMed  Publishing.  All
+       rights reserved.
+
+BUGS
+       Data  Set Trailing Padding is explicitly removed from the input images,
+       but if there is anything else after the Pixel Data tag, the output file
+       will be invalid (tags out of order) since the multiframe Pixel Data tag
+       is added after everything else in the first input file  is  copied.  If
+       there  are  private  things  after  the  Pixel  Data  the  use  of  the
+       -removeprivate option may help. This is only a problem when  using  the
+       -copyall flag.
+
+       Byte  order  of input and output must be the same, due to the crude raw
+       copying that is used to build the multiframe pixel data.
+
+       There is no support for bulding encapsulated transfer syntax  represen‐
+       tations of the multiframe image pixel data (i.e. with delimiters, JPEG,
+       RLE, etc.)
+
+       If any of the Image Pixel Module attributes are inconsistent,  such  as
+       different  matrix  sizes,  an error will be flagged but the output file
+       will still be built (though it will be meaningless).
+
+       Should check some multi valued attributes like PixelSpacing are consis‐
+       tent but doesn't yet.
+
+
+
+DICOM PS3                        5 March 2005                       DCMULTI(1)
